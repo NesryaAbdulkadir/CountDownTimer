@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Count Down</title>
+  </head>
+  <body>
+    <div class="countdown-container">
+      <div class="countdown">
+        <div>
+          <div class="countdown-header" id="countdown">
+            <p class="countdown-minutes">10:20</p>
+          </div>
+          <div class="control-buttons">
+            <span class="material-icons" id="pause"> pause </span>
+            <span class="material-icons" id="play"> play_arrow </span>
+            <span class="material-icons" id="timer"> timer </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="time-form-close"></div>
+    <div class="time-form">
+      <div class="time-form-control">
+        <div class="time-form-header">
+          <input
+            type="text"
+            class="input"
+            placeholder="00"
+            id="hour"
+            autofocus
+          />
+          <label for="hour">Hours</label>
+        </div>
+        <p>:</p>
+        <div class="time-form-header">
+          <input type="text" class="input" placeholder="00" id="minute" />
+          <label for="minute">minutes</label>
+        </div>
+        <p>:</p>
+        <div class="time-form-header">
+          <input type="text" placeholder="00" class="input" id="second" />
+          <label for="second">Seconds</label>
+        </div>
+      </div>
+      <button class="btn" id="start">Start</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
