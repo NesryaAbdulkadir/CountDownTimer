@@ -17,7 +17,7 @@ body {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  z-index: -1;
+  z-index: 10;
 }
 .time-form {
   z-index: 999;
@@ -75,6 +75,7 @@ body {
   font-size: 1.2em;
   padding: 10px 20px;
   border-radius: 5px;
+
   border: none;
   outline: none;
   background-color: #137b9d;
@@ -109,6 +110,7 @@ body {
   border-radius: 50%;
   background-color: white;
   box-shadow: 0px 5px 5px 0px rgb(203, 203, 203), inset 0px 10px 20px -15px gray;
+  z-index: 1;
   border: 4px solid white;
 }
 .control-buttons {
@@ -119,4 +121,13 @@ body {
   font-size: 2em;
   color: rgb(27, 27, 27);
   cursor: pointer;
+}
+.control-buttons button {
+  background-color: transparent;
+  border: none;
+}
+#play:disabled,
+#pause:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
 }

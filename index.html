@@ -16,30 +16,20 @@
       <div class="countdown">
         <div>
           <div class="countdown-header" id="countdown">
-            <p class="countdown-minutes">10:20</p>
+            <p class="countdown-minutes" id="countdown-timer">00:00</p>
           </div>
           <div class="control-buttons">
-            <span class="material-icons" id="pause"> pause </span>
-            <span class="material-icons" id="play"> play_arrow </span>
-            <span class="material-icons" id="timer"> timer </span>
+            <button class="material-icons" id="pause">pause</button>
+            <button class="material-icons" id="play">play_arrow</button>
+            <button class="material-icons" id="timer">timer</button>
           </div>
         </div>
       </div>
     </div>
-    <div class="time-form-close"></div>
-    <div class="time-form">
+
+    <div class="time-form-close" id="time-form-close"></div>
+    <div class="time-form" id="time-form">
       <div class="time-form-control">
-        <div class="time-form-header">
-          <input
-            type="text"
-            class="input"
-            placeholder="00"
-            id="hour"
-            autofocus
-          />
-          <label for="hour">Hours</label>
-        </div>
-        <p>:</p>
         <div class="time-form-header">
           <input type="text" class="input" placeholder="00" id="minute" />
           <label for="minute">minutes</label>
